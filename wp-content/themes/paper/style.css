@@ -4,3 +4,34 @@ Theme Name: Template de base
 
 
 */
+body{
+    margin: 0;
+    padding: 0;
+
+}
+span{
+    color: #f47b41;
+}
+.nav{
+    height: 100%;
+}
+.contenu{
+    margin-left: 5rem;
+}
+.titletrait{
+    display: flex;
+}
+.title{
+    min-width: 200px;
+}
+.trait{
+    margin-top: 0.5rem;
+    
+    align-items: center;
+    max-width: 853px;
+    min-width: 100%;
+    max-height: 7px;
+    background-color: #ebebeb;
+    color: #ebebeb;
+    float: right;
+}
