@@ -1,26 +1,41 @@
-<?php
-function montheme_supports() //charge les pages
-{
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-    add_theme_support('menus');
-    register_nav_menu('header', 'En tête du menu');
-    register_nav_menu('footer', 'Pied de page');
+<?php 
 
-    add_image_size('post-thumbnail', 350, 215, true);
-}
+// on créé une zone pour le menu 
+register_nav_menu( 'menuheader', 'Menu du Header' );
+register_nav_menu( 'menufooter', 'Menu du Footer' );
 
 
-function montheme_register_assets() //inclue les élement de boodstrap 
-{
-    wp_register_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', []);
-    wp_register_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
-    wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', [], false, true);
-    wp_deregister_script('jquery');
-    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', [], false, true);
-    wp_enqueue_style('bootstrap');
-    wp_enqueue_script('bootstrap');
-}
+function header_widgets_init() {
+ 
+register_sidebar( array(
 
-add_action('after_setup_theme', 'montheme_supports');
-add_action('wp_enqueue_scripts', 'montheme_register_assets');
+ 'name' => 'Ma zone que je viens de créer',
+ 'id' => 'nouvelle-zone',
+ 'before_widget' => '<div class="mettez-ce-que-vous-voulez">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h2 class="mettez-ce-que-vous-voulez">',
+ 'after_title' => '</h2>',
+ ) );
+ 
+ 
+register_sidebar( array(
+
+ 'name' => 'Ma zone que je viens de créer 2',
+ 'id' => 'nouvelle-zone-2',
+ 'before_widget' => '<div class="mettez-ce-que-vous-voulez">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h2 class="mettez-ce-que-vous-voulez">',
+ 'after_title' => '</h2>',
+ ) );
+ 
+ }
+
+add_action( 'widgets_init', 'header_widgets_init' );
+
+
+//‘name’ = nom de la “widget area” qui apparaîtra dans votre administration WordPress
+//‘id’ = identifiant unique de votre “widget area”
+//‘before_widget’ = choisir une balise HTML à ouvrir avant votre widget (<div>, <li> etc…) et profitez-en pour y ajouter une classe qui pourra vous aider lors de la customisation CSS (étape 5)
+//‘after_widget’ = fermer la balise (</div>, </li> etc…)
+//‘before_title’ = choisir une balise pour le titre du widget (<h2>, <h3>, <h4> etc…) et, comme pour le ‘before_widget’, ajoutez une classe pour agir en CSS ultérieurement
+//‘after_title’ = fermer la balise du titre (</h2>, </h3>, </h4> etc…)
