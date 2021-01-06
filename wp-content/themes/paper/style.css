@@ -12,7 +12,7 @@ body{
 span{
     color: #f47b41;
 }
-.nav{
+.navit{
     height: 100%;
 }
 .contenu{
@@ -22,11 +22,13 @@ span{
     display: flex;
 }
 .title{
-    min-width: 200px;
+    min-width: 140px;
+}
+.title2{
+    min-width: 250px;
 }
 .trait{
     margin-top: 0.5rem;
-    
     align-items: center;
     max-width: 853px;
     min-width: 100%;
@@ -34,4 +36,12 @@ span{
     background-color: #ebebeb;
     color: #ebebeb;
     float: right;
+}
+.about{
+    max-height: 300px;
+    column-count: 2;
+    overflow: hidden;
+}
+.tutu{
+    background-color: black;
 }
