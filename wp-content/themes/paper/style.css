@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /*
 Theme Name: Template de base
-
-
 */
 * {
   box-sizing: border-box;
@@ -171,9 +169,7 @@ img {
     
 }
 .avis{
-  /* display: none; */
-  position: absolute;
-  top: 100px;
+
   border: #7f7d80 solid 2px;
   background-image: url(/wp-content/themes/paper/images/font.jpg);
   background-size: 100% 20%;

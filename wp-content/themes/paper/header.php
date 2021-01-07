@@ -15,7 +15,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-       <div class=" navit col-12 col-md-3 mt-4" style="background-color: #ebebeb;">
+       <div class=" navit col-12 col-md-3" style="background-color: #ebebeb;">
         <a href="#"><img src="/wp-content/themes/paper/images/Sans-titre-1.png" alt=""></a>
         <ul class="nav flex-column">
           <li class="nav-item">
