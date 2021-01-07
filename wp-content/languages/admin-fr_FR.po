@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.6.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-01 16:47:21+0000\n"
+"PO-Revision-Date: 2021-01-05 15:21:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -586,7 +586,7 @@ msgstr "Impossible de créer le dossier d’exportation de confidentialité du c
 
 #: wp-admin/includes/privacy-tools.php:313
 msgid "Invalid email address when generating user privacy export file."
-msgstr "Adresse de messagerie non valide lors de la génération du fichier d’exportation de confidentialité du compte."
+msgstr "Adresse e-mail non valide lors de la génération du fichier d’exportation de confidentialité du compte."
 
 #: wp-admin/includes/privacy-tools.php:307
 msgid "Invalid request ID when generating user privacy export file."
@@ -919,7 +919,7 @@ msgstr "Les mises à jour automatiques peuvent être activées ou désactivées 
 #. updating WordPress.
 #: wp-admin/update-core.php:247
 msgid "<strong>Important:</strong> Before updating, please <a href=\"%1$s\">back up your database and files</a>. For help with updates, visit the <a href=\"%2$s\">Updating WordPress</a> documentation page."
-msgstr "<strong>Important :</strong> Avant de procéder aux mises à jour, veuillez <a href=\"%1$s\">sauvegarder votre base de données et vos fichiers</a>. Pour obtenir de l’aide à propos des mises à jour, visitez la page de documentation <a href=\"%2$s\">Comment mettre à jour WordPress</a>."
+msgstr "<strong>Important :</strong> Avant de procéder aux mises à jour, veuillez <a href=\"%1$s\">sauvegarder votre base de données et vos fichiers</a>. Pour obtenir de l’aide à propos des mises à jour, consultez la page de documentation <a href=\"%2$s\">Comment mettre à jour WordPress</a>."
 
 #: wp-admin/customize.php:195 wp-admin/themes.php:551 wp-admin/themes.php:897
 #: wp-admin/themes.php:1113 wp-admin/theme-install.php:374
@@ -1844,7 +1844,7 @@ msgstr "Choisissez soit une ville dans le même fuseau horaire que vous ou un d�
 
 #: wp-admin/options-general.php:111
 msgid "Administration Email Address"
-msgstr "Adresse de messagerie d’administration"
+msgstr "Adresse e-mail d’administration"
 
 #: wp-admin/options-general.php:100
 msgid "https://wordpress.org/support/article/giving-wordpress-its-own-directory/"
@@ -4026,7 +4026,7 @@ msgstr "Dans cette sous-section, indiquez les informations qui sont récupérée
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:500
 msgid "In this section you should note what personal data you collect from users and site visitors. This may include personal data, such as name, email address, personal account preferences; transactional data, such as purchase information; and technical data, such as information about cookies."
-msgstr "Dans cette section, indiquez les données personnelles que vous collectez sur les utilisateurs/utilisatrices et personnes visitant votre site. Cela pourrait comprendre les données personnelles comme le nom, l’adresse de messagerie, les préférences de compte personnel ; les données transactionnelles comme les informations de commande ; et les données techniques comme les informations sur les cookies."
+msgstr "Dans cette section, indiquez les données personnelles que vous collectez sur les utilisateurs/utilisatrices et personnes visitant votre site. Cela pourrait comprendre les données personnelles comme le nom, l’adresse e-mail, les préférences de compte personnel ; les données transactionnelles comme les informations de commande ; et les données techniques comme les informations sur les cookies."
 
 #: wp-admin/includes/class-wp-privacy-policy-content.php:473
 msgid "Suggested text:"
@@ -4256,7 +4256,7 @@ msgstr "Si vous vous rendez sur la page de connexion, un cookie temporaire sera 
 #. translators: Default privacy policy text.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:552
 msgid "If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year."
-msgstr "Si vous déposez un commentaire sur notre site, il vous sera proposé d’enregistrer votre nom, adresse de messagerie et site dans des cookies. C’est uniquement pour votre confort afin de ne pas avoir à saisir ces informations si vous déposez un autre commentaire plus tard. Ces cookies expirent au bout d’un an."
+msgstr "Si vous déposez un commentaire sur notre site, il vous sera proposé d’enregistrer votre nom, adresse e-mail et site dans des cookies. C’est uniquement pour votre confort afin de ne pas avoir à saisir ces informations si vous déposez un autre commentaire plus tard. Ces cookies expirent au bout d’un an."
 
 #. translators: Privacy policy tutorial.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:548
@@ -4271,7 +4271,7 @@ msgstr "Cookies"
 #. translators: Default privacy policy text.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:522
 msgid "An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment."
-msgstr "Une chaîne anonymisée créée à partir de votre adresse de messagerie (également appelée hash) peut être envoyée au service Gravatar pour vérifier si vous utilisez ce dernier. Les clauses de confidentialité du service Gravatar sont disponibles ici : https://automattic.com/privacy/. Après validation de votre commentaire, votre photo de profil sera visible publiquement à coté de votre commentaire."
+msgstr "Une chaîne anonymisée créée à partir de votre adresse e-mail (également appelée hash) peut être envoyée au service Gravatar pour vérifier si vous utilisez ce dernier. Les clauses de confidentialité du service Gravatar sont disponibles ici : https://automattic.com/privacy/. Après validation de votre commentaire, votre photo de profil sera visible publiquement à coté de votre commentaire."
 
 #. translators: Default privacy policy text.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:520
@@ -4593,7 +4593,7 @@ msgstr "Exportation de données personnelles pour %s"
 
 #: wp-admin/includes/ajax-actions.php:4754
 msgid "A valid email address must be given."
-msgstr "Erreur : une adresse de messagerie valide doit être fournie."
+msgstr "Erreur : une adresse e-mail valide doit être fournie."
 
 #: wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php:65
 msgid "Force erase personal data"
@@ -4631,11 +4631,11 @@ msgstr "Envoyer une demande"
 
 #: wp-admin/erase-personal-data.php:64 wp-admin/export-personal-data.php:64
 msgid "Username or email address"
-msgstr "Identifiant ou adresse de messagerie"
+msgstr "Identifiant ou adresse e-mail"
 
 #: wp-admin/erase-personal-data.php:61 wp-admin/export-personal-data.php:61
 msgid "An email will be sent to the user at this email address asking them to verify the request."
-msgstr "Un e-mail sera envoyé à l’utilisateur ou à l’utilisatrice de cette adresse de messagerie pour lui demander de vérifier cette demande."
+msgstr "Un e-mail sera envoyé à l’utilisateur ou à l’utilisatrice de cette adresse e-mail pour lui demander de vérifier cette demande."
 
 #: wp-admin/export-personal-data.php:60
 msgid "Add Data Export Request"
@@ -4647,7 +4647,7 @@ msgstr "Demande de confirmation bien initialisée."
 
 #: wp-admin/includes/privacy-tools.php:130
 msgid "Unable to add this request. A valid email address or username must be supplied."
-msgstr "Impossible d’ajouter cette demande. Une adresse de messagerie ou un identifiant valide doit être fourni."
+msgstr "Impossible d’ajouter cette demande. Une adresse e-mail ou un identifiant valide doit être fourni."
 
 #: wp-admin/includes/privacy-tools.php:91
 msgid "Confirmation request sent again successfully."
@@ -4713,7 +4713,7 @@ msgstr "L’index de suppression ne peut pas être inférieur à 1."
 
 #: wp-admin/includes/ajax-actions.php:4946
 msgid "Invalid email address in request."
-msgstr "Adresse de messagerie non valide dans la demande."
+msgstr "Adresse e-mail non valide dans la demande."
 
 #: wp-admin/includes/plugin-install.php:676
 msgid "Requires PHP Version:"
@@ -5851,7 +5851,7 @@ msgstr "Il y a une modification en cours de votre adresse de messagerie, en fave
 
 #: wp-admin/user-edit.php:212
 msgid "Error while saving the new email address. Please try again."
-msgstr "Une erreur est survenue lors de l’enregistrement de votre adresse de messagerie. Veuillez réessayer."
+msgstr "Une erreur est survenue lors de l’enregistrement de votre adresse e-mail. Veuillez réessayer."
 
 #: wp-admin/upload.php:229
 msgid "You can narrow the list by file type/status or by date using the dropdown menus above the media table."
@@ -7159,9 +7159,9 @@ msgid ""
 msgstr ""
 "Bonjour ###USERNAME###,\n"
 "\n"
-"Vous avez récemment demandé à modifier l’adresse de messagerie de l’administration de votre compte.\n"
+"Vous avez récemment demandé à modifier l’adresse e-mail d’administration de votre compte.\n"
 "\n"
-"Si c’est bien le cas, veuillez cliquer sur le lien suivant pour changer d’adresse de messagerie :\n"
+"Si c’est bien le cas, veuillez cliquer sur le lien suivant pour changer d’adresse e-mail :\n"
 "###ADMIN_URL###\n"
 "\n"
 "Vous pouvez ignorer ce message et le supprimer si vous ne souhaitez pas lancer cette action.\n"
@@ -8172,11 +8172,11 @@ msgstr "Votre thème ne prend pas en charge nativement les menus, mais vous pouv
 
 #: wp-admin/install.php:408
 msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
-msgstr "Désolé, ce n’est pas une adresse de messagerie valide. Les adresses de messagerie ressemblent à cela : <code>identifiant@example.com</code>."
+msgstr "Désolé, ce n’est pas une adresse e-mail valide. Les adresses de messagerie ressemblent à cela : <code>identifiant@example.com</code>."
 
 #: wp-admin/install.php:404
 msgid "You must provide an email address."
-msgstr "Vous devez saisir une adresse de messagerie."
+msgstr "Vous devez saisir une adresse e-mail."
 
 #: wp-admin/install.php:400
 msgid "Your passwords do not match. Please try again."
@@ -9470,7 +9470,7 @@ msgstr "Mo (Laisser vide pour utiliser la valeur par défaut du réseau)"
 #. title.
 #: wp-admin/includes/misc.php:1410
 msgid "[%s] New Admin Email Address"
-msgstr "[%s] Nouvelle adresse de messagerie d’administration"
+msgstr "[%s] Nouvelle adresse e-mail d’administration"
 
 #: wp-admin/includes/class-wp-debug-data.php:200
 #: wp-admin/includes/class-wp-debug-data.php:210
@@ -9689,11 +9689,11 @@ msgstr "La table %1$s est dans un mauvais état. Elle renvoie l’erreur suivant
 
 #: wp-admin/user-new.php:418
 msgid "Enter the email address or username of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
-msgstr "Pour inviter un compte de ce réseau sur ce site, saisissez son adresse de messagerie ou son identifiant. Cette personne recevra alors un message lui proposant de confirmer son ajout."
+msgstr "Pour inviter un compte de ce réseau sur ce site, saisissez son adresse e-mail ou son identifiant. Cette personne recevra alors un message lui proposant de confirmer son ajout."
 
 #: wp-admin/user-new.php:414
 msgid "Enter the email address of an existing user on this network to invite them to this site. That person will be sent an email asking them to confirm the invite."
-msgstr "Saisissez l’adresse de messagerie d’un compte existant sur votre réseau, afin de l’inviter sur ce site. Cette personne recevra un message lui demandant de confirmer l’invitation."
+msgstr "Saisissez l’adresse e-mail d’un compte existant sur votre réseau, afin de l’inviter sur ce site. Cette personne recevra un message lui demandant de confirmer l’invitation."
 
 #: wp-admin/user-edit.php:337
 msgid "Show Toolbar when viewing site"
@@ -9966,7 +9966,7 @@ msgstr "De nombreuses personnes utilisent les raccourcis clavier pour modérer l
 
 #: wp-admin/edit-comments.php:184
 msgid "In the <strong>Author</strong> column, in addition to the author&#8217;s name, email address, and blog URL, the commenter&#8217;s IP address is shown. Clicking on this link will show you all the comments made from this IP address."
-msgstr "Dans la colonne <strong>Auteur/autrice</strong>, en plus de trouver le nom de l’auteur ou de l’autrice, son adresse de messagerie et celle de son site, vous trouverez son adresse IP. En cliquant dessus, vous obtiendrez une liste de tous les commentaires faits depuis cette adresse IP."
+msgstr "Dans la colonne <strong>Auteur/autrice</strong>, en plus de trouver le nom de l’auteur ou de l’autrice, son adresse e-mail et celle de son site, vous trouverez son adresse IP. En cliquant dessus, vous obtiendrez une liste de tous les commentaires faits depuis cette adresse IP."
 
 #: wp-admin/edit-comments.php:175
 msgid "You can manage comments made on your site similar to the way you manage posts and other content. This screen is customizable in the same ways as other management screens, and you can act on comments using the on-hover action links or the bulk actions."
@@ -11802,7 +11802,7 @@ msgstr "Cela a abouti à ce message d’erreur : %s"
 
 #: wp-admin/includes/schema.php:997
 msgid "You must provide a valid email address."
-msgstr "Vous devez saisir une adresse de messagerie valide."
+msgstr "Vous devez saisir une adresse de e-mail valide."
 
 #: wp-admin/includes/schema.php:988 wp-admin/includes/schema.php:992
 msgid "The network already exists."
@@ -12725,7 +12725,7 @@ msgstr "Vide"
 
 #: wp-admin/options-discussion.php:270
 msgid "For users without a custom avatar of their own, you can either display a generic logo or a generated one based on their email address."
-msgstr "Les comptes n’ayant pas d’avatar peuvent se voir attribuer un logo générique, ou un avatar généré à partir de leur adresse de messagerie."
+msgstr "Les comptes n’ayant pas d’avatar peuvent se voir attribuer un logo générique, ou un avatar généré à partir de leur adresse e-mail."
 
 #: wp-admin/options-discussion.php:266 wp-admin/options-discussion.php:267
 msgid "Default Avatar"
@@ -13024,7 +13024,7 @@ msgstr "Installer WordPress"
 
 #: wp-admin/install.php:179
 msgid "Double-check your email address before continuing."
-msgstr "Vérifiez bien cette adresse de messagerie avant de continuer."
+msgstr "Vérifiez bien cette adresse e-mail avant de continuer."
 
 #: wp-admin/install.php:177
 msgid "Your Email"
@@ -13040,7 +13040,7 @@ msgstr "WordPress &raquo; Installation"
 
 #: wp-admin/includes/user.php:201
 msgid "<strong>Error</strong>: Please enter an email address."
-msgstr "<strong>Erreur</strong> : veuillez saisir une adresse de messagerie."
+msgstr "<strong>Erreur</strong> : veuillez saisir une adresse e-mail."
 
 #: wp-admin/includes/user.php:172
 msgid "<strong>Error</strong>: Passwords may not contain the character \"\\\"."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.6.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-02 17:14:44+0000\n"
+"PO-Revision-Date: 2021-01-05 15:14:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1895,7 +1895,7 @@ msgstr "L’enregistrement de l’image a échoué, probablement car le serveur 
 
 #: wp-login.php:870
 msgid "Please enter your username or email address. You will receive an email message with instructions on how to reset your password."
-msgstr "Merci de renseigner votre identifiant ou votre adresse de messagerie. Vous recevrez un e-mail contenant les instructions vous permettant de réinitialiser votre mot de passe."
+msgstr "Merci de renseigner votre identifiant ou votre adresse e-mail. Vous recevrez un e-mail contenant les instructions vous permettant de réinitialiser votre mot de passe."
 
 #. translators: Accessibility text.
 #: wp-includes/media-template.php:188
@@ -1927,7 +1927,7 @@ msgstr "Adresse e-mail inconnue. Vérifiez l’orthographe ou essayez avec votre
 
 #: wp-includes/user.php:152 wp-includes/user.php:354
 msgid "Unknown username. Check again or try your email address."
-msgstr "Identifiant inconnu. Vérifiez l’orthographe ou essayez avec votre adresse de messagerie."
+msgstr "Identifiant inconnu. Vérifiez l’orthographe ou essayez avec votre adresse e-mail."
 
 #: wp-includes/media.php:4395
 msgid "Media list"
@@ -2203,7 +2203,7 @@ msgstr "L’e-mail est correct"
 
 #: wp-login.php:721
 msgid "This email may be different from your personal email address."
-msgstr "Cet e-mail peut être différent de votre adresse de messagerie personnelle."
+msgstr "Cet e-mail peut être différent de votre adresse e-mail personnelle."
 
 #. translators: %s: Admin email address.
 #: wp-login.php:714
@@ -2569,7 +2569,7 @@ msgstr "Sélectionner l’icône du site"
 
 #: wp-includes/user.php:3807
 msgid "An incomplete user privacy request for this email address already exists."
-msgstr "Une demande de confidentialité incomplète existe déjà pour cette adresse de messagerie."
+msgstr "Une demande de confidentialité incomplète existe déjà pour cette adresse e-mail."
 
 #: wp-includes/class-wp-customize-widgets.php:778
 msgid "Keep widget settings and move it to the inactive widgets"
@@ -2831,7 +2831,7 @@ msgstr "S’il est prévu d’utiliser la taxonomie publiquement ou non, que ce 
 
 #: wp-login.php:365 wp-login.php:407 wp-includes/user.php:2485
 msgid "<strong>Error</strong>: There is no account with that username or email address."
-msgstr "<strong>Erreur</strong> : il n’y a pas de compte avec cet identifiant ou cette adresse de messagerie."
+msgstr "<strong>Erreur</strong> : il n’y a pas de compte avec cet identifiant ou cette adresse e-mail."
 
 #: wp-includes/class-wp.php:300 wp-includes/ms-deprecated.php:275
 #: wp-includes/ms-deprecated.php:294
@@ -3830,7 +3830,7 @@ msgid ""
 msgstr ""
 "Bonjour ###USERNAME###,\n"
 "\n"
-"Vous avez récemment demandé à modifier l’adresse de messagerie de l’administration de votre compte.\n"
+"Vous avez récemment demandé à modifier l’adresse e-mail d’administration de votre compte.\n"
 "\n"
 "Si c’est bien le cas, veuillez cliquer sur le lien suivant pour la changer :\n"
 "###ADMIN_URL###\n"
@@ -3845,7 +3845,7 @@ msgstr ""
 
 #: wp-includes/user.php:3029
 msgid "<strong>Error</strong>: The email address is already used."
-msgstr "<strong>Erreur</strong> : cette adresse de messagerie est déjà utilisée."
+msgstr "<strong>Erreur</strong> : cette adresse e-mail est déjà utilisée."
 
 #: wp-includes/taxonomy.php:607
 msgid "&larr; Go to Categories"
@@ -5327,7 +5327,7 @@ msgstr "Identifiant non valide."
 #: wp-includes/rest-api.php:2257 wp-includes/user.php:3782
 #: wp-admin/network/site-new.php:96
 msgid "Invalid email address."
-msgstr "Adresse de messagerie non valide."
+msgstr "Adresse e-mail non valide."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:597
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:853
@@ -6406,7 +6406,7 @@ msgstr "Adresse IP de l’auteur de l’objet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1395
 msgid "Email address for the object author."
-msgstr "Adresse de messagerie pour l’objet auteur."
+msgstr "Adresse e-mail pour l’objet auteur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1390
 msgid "The ID of the user object, if author was a user."
@@ -7297,7 +7297,7 @@ msgstr "%1$s (%2$s)"
 #. translators: %s: Email address.
 #: wp-includes/user.php:247
 msgid "<strong>Error</strong>: The password you entered for the email address %s is incorrect."
-msgstr "<strong>Erreur</strong> : le mot de passe que vous avez saisi pour l’adresse de messagerie %s est incorrect."
+msgstr "<strong>Erreur</strong> : le mot de passe que vous avez saisi pour l’adresse e-mail %s est incorrect."
 
 #: wp-includes/user.php:212
 msgid "<strong>Error</strong>: The email field is empty."
@@ -7361,7 +7361,7 @@ msgstr "Valider"
 
 #: wp-includes/pluggable.php:554
 msgid "<strong>Error</strong>: Invalid username, email address or incorrect password."
-msgstr "<strong>Erreur</strong> : identifiant, adresse de messagerie ou mot de passe non valide."
+msgstr "<strong>Erreur</strong> : identifiant, adresse e-mail ou mot de passe non valide."
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Term name, 4: Taxonomy
 #. singular name.
@@ -8351,7 +8351,7 @@ msgid ""
 msgstr ""
 "Bonjour ###USERNAME###,\n"
 "\n"
-"Ce message confirme que votre adresse de messagerie sur ###SITENAME### a été changée par ###NEW_EMAIL###.\n"
+"Ce message confirme que votre adresse e-mail sur ###SITENAME### a été changée par ###NEW_EMAIL###.\n"
 "\n"
 "Si vous n’avez pas changé votre adresse, veuillez contacter l’administrateur ou l’administratrice du site sur\n"
 "###ADMIN_EMAIL###\n"
@@ -10969,7 +10969,7 @@ msgstr "<strong>Erreur</strong> : cet identifiant est déjà utilisé. Veuillez
 
 #: wp-includes/ms-functions.php:507 wp-admin/user-new.php:356
 msgid "Please enter a valid email address."
-msgstr "Veuillez saisir une adresse de messagerie valide."
+msgstr "Veuillez saisir une adresse e-mail valide."
 
 #: wp-includes/ms-functions.php:174 wp-admin/user-new.php:353
 msgid "The requested user does not exist."
@@ -11670,7 +11670,7 @@ msgstr "<strong>Erreur</strong> : veuillez saisir votre commentaire."
 
 #: wp-includes/comment.php:3527
 msgid "<strong>Error</strong>: Please enter a valid email address."
-msgstr "<strong>Erreur</strong> : veuillez saisir une adresse de messagerie valide."
+msgstr "<strong>Erreur</strong> : veuillez saisir une adresse e-mail valide."
 
 #: wp-includes/comment.php:3525
 msgid "<strong>Error</strong>: Please fill the required fields (name, email)."
@@ -12421,7 +12421,7 @@ msgstr "L’adresse de WordPress que vous avez saisie ne semble pas être valide
 
 #: wp-includes/formatting.php:4663
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
-msgstr "L’adresse de messagerie fournie ne semble pas être valide. Veuillez saisir une adresse valide."
+msgstr "L’adresse e-mail fournie ne semble pas être valide. Veuillez saisir une adresse valide."
 
 #: wp-includes/taxonomy.php:2335
 msgid "A term with the name provided already exists with this parent."
@@ -12434,7 +12434,7 @@ msgstr "Une erreur est survenue lors de votre ajout à ce site. Allez à l’<a 
 
 #: wp-includes/comment-template.php:2465
 msgid "Your email address will not be published."
-msgstr "Votre adresse de messagerie ne sera pas publiée."
+msgstr "Votre adresse e-mail ne sera pas publiée."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6805 wp-includes/class-http.php:275
 #: wp-includes/class-http.php:503
@@ -12788,7 +12788,7 @@ msgstr "Désolé, vous n’avez pas l’autorisation d’accéder aux détails d
 
 #: wp-includes/class-wp-xmlrpc-server.php:3930
 msgid "A valid email address is required."
-msgstr "Une adresse de messagerie valide est nécessaire."
+msgstr "Une adresse e-mail valide est nécessaire."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3928
 msgid "Comment author name and email are required."
@@ -12974,11 +12974,11 @@ msgstr "Mot de passe oublié"
 #: wp-includes/user.php:2733 wp-includes/user.php:3017
 #: wp-admin/includes/user.php:203
 msgid "<strong>Error</strong>: The email address isn&#8217;t correct."
-msgstr "<strong>Erreur</strong> : l’adresse de messagerie est incorrecte."
+msgstr "<strong>Erreur</strong> : l’adresse e-mail est incorrecte."
 
 #: wp-includes/user.php:2731
 msgid "<strong>Error</strong>: Please type your email address."
-msgstr "<strong>Erreur</strong> : veuillez saisir une adresse de messagerie."
+msgstr "<strong>Erreur</strong> : veuillez saisir une adresse e-mail."
 
 #: wp-includes/user.php:2588 wp-includes/user.php:2592
 #: wp-includes/user.php:2598 wp-includes/user.php:2624
@@ -12998,7 +12998,7 @@ msgstr "La réinitialisation du mot de passe n’est pas autorisée pour ce comp
 
 #: wp-login.php:361
 msgid "<strong>Error</strong>: Please enter a username or email address."
-msgstr "<strong>Erreur</strong> : veuillez saisir un identifiant ou une adresse de messagerie."
+msgstr "<strong>Erreur</strong> : veuillez saisir un identifiant ou une adresse e-mail."
 
 #: wp-login.php:151
 msgid "Powered by WordPress"
@@ -13401,7 +13401,7 @@ msgstr "Clé d’activation non valide."
 
 #: wp-includes/ms-functions.php:565
 msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
-msgstr "Cette adresse de messagerie a déjà été utilisée. Veuillez vérifier dans votre messagerie si le message d’activation ne s’y trouve pas. L’identifiant redeviendra disponible dans quelques jours si vous ne faites rien."
+msgstr "Cette adresse e-mail a déjà été utilisée. Veuillez vérifier dans votre messagerie si le message d’activation ne s’y trouve pas. L’identifiant redeviendra disponible dans quelques jours si vous ne faites rien."
 
 #: wp-includes/ms-functions.php:554
 msgid "That username is currently reserved but may be available in a couple of days."
@@ -13409,7 +13409,7 @@ msgstr "Cet identifiant est pour le moment réservé, mais pourrait être dispon
 
 #: wp-includes/user.php:1865 wp-includes/ms-functions.php:541
 msgid "Sorry, that email address is already used!"
-msgstr "Désolé, cette adresse de messagerie est déjà utilisée !"
+msgstr "Désolé, cette adresse e-mail est déjà utilisée !"
 
 #: wp-includes/user.php:1791 wp-includes/ms-functions.php:536
 msgid "Sorry, that username already exists!"
@@ -13417,7 +13417,7 @@ msgstr "Désolé, cet identifiant existe déjà !"
 
 #: wp-includes/ms-functions.php:530
 msgid "Sorry, that email address is not allowed!"
-msgstr "Désolé, cette adresse de messagerie n’est pas autorisée !"
+msgstr "Désolé, cette adresse e-mail n’est pas autorisée !"
 
 #: wp-includes/ms-functions.php:522
 msgid "Sorry, usernames must have letters too!"
@@ -13425,7 +13425,7 @@ msgstr "Désolé, les identifiants doivent aussi avoir des lettres !"
 
 #: wp-includes/ms-functions.php:509
 msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
-msgstr "Vous ne pouvez pas vous inscrire avec cette adresse de messagerie. Nous avons rencontré des problèmes de la part de ce service. Veuillez en utiliser un autre."
+msgstr "Vous ne pouvez pas vous inscrire avec cette adresse e-mail. Nous avons rencontré des problèmes de la part de ce service. Veuillez en utiliser un autre."
 
 #: wp-includes/ms-functions.php:287
 msgid "That user does not exist."
@@ -13595,7 +13595,7 @@ msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous a
 
 #: wp-includes/class-wp-editor.php:1263
 msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
-msgstr "L’URL que vous avez saisie semble être une adresse de messagerie. Voulez-vous y ajouter le préfixe « mailto: » nécessaire ?"
+msgstr "L’URL que vous avez saisie semble être une adresse e-mail. Voulez-vous y ajouter le préfixe « mailto: » nécessaire ?"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:75
 #: wp-includes/class-wp-editor.php:1336 wp-includes/js/dist/components.js:26538
