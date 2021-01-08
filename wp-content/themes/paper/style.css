@@ -17,8 +17,39 @@ body{
 span{
     color: #f47b41;
 }
+.navit{
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.logo{
+  margin-left: auto;
+    margin-right: auto;
+ }
+ .menu-menuheader-container{
+   margin-top: 3rem;
+ }
+ .navit ul{
+   margin-left: -2rem;
+   text-align: center;
+   list-style-type: none;
+ }
+ .navit li{
+   font-size: 0.8rem;
+   margin-top: 1rem;
+   text-decoration:none;
+   color: black;
+ }
+
+ .navit li a{
+  text-decoration:none;
+  color: black;
+}
+ .menu-item-80 a{
+  color: #f47b41!important;
+}
 .contenu{
     margin-left: 5rem;
+    margin-top: 3rem;
 }
 .titletrait{
     display: flex;
@@ -32,14 +63,16 @@ span{
     white-space:nowrap;
 }
 .trait{
+  
     margin-top: 0.5rem;
     align-items: center;
-    max-width: 853px;
-    min-width: 100%;
+    width: 100%;
+    display: block;
     max-height: 7px;
     background-color: #ebebeb;
     color: #ebebeb;
     float: right;
+    z-index: 1;
 }
 .about{
   font-size: 0.9rem;
@@ -47,10 +80,10 @@ span{
     column-count: 2;
     overflow: hidden;
 }
-@media  (max-width: 1030px) {
+@media screen and (max-width: 1350px) {
   .about{
     max-height: none;
-    column-count: none;
+    column-count: initial;
   }
   
 }
@@ -153,13 +186,13 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-.design {
+.design{
   margin: 0;
   min-width: 100%;
   max-height: 100%;
 }
 .design p{
-  font-size: 0.9rem;
+    font-size: 0.9rem;
     column-count: 3;
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -168,10 +201,62 @@ img {
     -webkit-column-gap: 50px;
     
 }
+
+@media screen and (max-width: 1350px) {
+  .design{
+    column-count: initial;
+  }
+  
+}
 .avis{
 
   border: #7f7d80 solid 2px;
   background-image: url(/wp-content/themes/paper/images/font.jpg);
   background-size: 100% 20%;
+  
+}
+.icon{
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .icon{
+    display: block;
+  }
+  .navit{
+    position: relative;
+    margin: 0!important;
+    min-width: 100%;
+    max-height: 290px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .navit #myLinks {
+    display: none;
+    background-color: #ebebeb;
+    ;
+    z-index: 10;
+  }
+  
+  .navit a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .navit a.icon {
+  
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 8rem;
+  }
+  
+  .navit a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+ 
   
 }

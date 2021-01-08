@@ -36,7 +36,7 @@
       ?>
 
     </div>
-    <div class="col-12 mt-5">
+    <div class="mt-5">
       <?php $slide= get_field("slide");
        ?>
       <!-- Slideshow container -->
