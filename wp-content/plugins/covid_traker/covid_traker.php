@@ -31,3 +31,39 @@ add_filter( 'rest_authentication_errors', function( $result ) {
     // on logged-in requests
     return $result;
 });
+
+//Ajout de lien de notre plugin dans le menu latéral
+add_action( 'admin_menu', 'pluginLink' );
+
+function pluginLink()
+{
+add_menu_page(
+'Covid Tracker - Admin', //Titre de la page
+'Covid Tracker', //Lien devant être affiché dans la barre latérale
+'manage_options', //Obligatoire pour que ca fonctionne
+'covid_tracker_admin', //Le Slug
+'covid_tracker_admin_page'//Le callBack
+);
+}
+
+function covid_tracker_admin_page(){
+$curl=curl_init('https://coronavirusapi-france.now.sh/AllLiveData');
+curl_setopt_array($curl, [
+    CURLOPT_CAINFO=> __DIR__.DIRECTORY_SEPARATOR. 'wp-content\plugins\covid_traker\cert.cer',
+    CURLOPT_RETURNTRANSFER=> true,
+    CURLOPT_TIMEOUT=> 1
+    ]);
+
+$data=curl_exec($curl);
+if($data===false){
+    var_dump(curl_error($curl));
+}else{
+    if(curl_getinfo($curl, CURLINFO_HTTP_CODE)=== 200){
+        $data=json_decode($data, true);
+        echo '<pre>';
+        var_dump($data);
+        echo '</pre>';
+    }
+}
+curl_close($curl);
+}

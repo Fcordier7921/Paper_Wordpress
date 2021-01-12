@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.6.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-05 15:21:48+0000\n"
+"PO-Revision-Date: 2021-01-10 22:06:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2325,7 +2325,7 @@ msgstr "Désolé vous n’avez pas l’autorisation d’accéder au données de 
 
 #: wp-admin/site-health-info.php:12 wp-admin/site-health-info.php:84
 msgid "Site Health Info"
-msgstr "Information de santé du site"
+msgstr "Informations de santé du site"
 
 #: wp-admin/update-core.php:501 wp-admin/update-core.php:680
 msgid "This update doesn&#8217;t work with your version of PHP."
@@ -9190,7 +9190,7 @@ msgstr "Rechercher des thèmes par mot-clé."
 
 #: wp-admin/setup-config.php:198
 msgid "In all likelihood, these items were supplied to you by your Web Host. If you don&#8217;t have this information, then you will need to contact them before you can continue. If you&#8217;re all ready&hellip;"
-msgstr "Vous devriez normalement avoir reçu ces informations de la part de votre hébergeur. Si vous ne les avez pas, il vous faudra contacter votre hébergeur afin de continuer. Si vous êtes prêt·e…"
+msgstr "Vous devriez normalement avoir reçu ces informations de la part de votre hébergeur. Si vous ne les avez pas, il vous faudra contacter votre hébergeur afin de continuer. Si vous avez tout le nécessaire, alors…"
 
 #: wp-admin/theme-editor.php:246
 msgid "This theme is broken."
@@ -13560,7 +13560,7 @@ msgstr "être aimé"
 #. translators: xfn: https://gmpg.org/xfn
 #: wp-admin/includes/meta-boxes.php:1325
 msgid "date"
-msgstr "petit·e ami·e"
+msgstr "amoureuse/amoureux"
 
 #. translators: xfn: https://gmpg.org/xfn
 #: wp-admin/includes/meta-boxes.php:1322
