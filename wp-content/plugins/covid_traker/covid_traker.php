@@ -4,9 +4,10 @@
  * Description: can centralize the statistics of covid contamination.
  *Version: 1.0.0
  */
+include_once("bdd.php");
+
 defined('ABSPATH') or die('rien à avoir');
 
-include_once("bdd.php");
 
 register_activation_hook(__FILE__, "DBP_tb_create");
 
@@ -44,26 +45,23 @@ add_menu_page(
 'covid_tracker_admin', //Le Slug
 'covid_tracker_admin_page'//Le callBack
 );
+include_once 'views/admin_wp.php';
 }
 
-function covid_tracker_admin_page(){
-$curl=curl_init('https://coronavirusapi-france.now.sh/AllLiveData');
-curl_setopt_array($curl, [
-    CURLOPT_CAINFO=> __DIR__.DIRECTORY_SEPARATOR. 'wp-content\plugins\covid_traker\cert.cer',
-    CURLOPT_RETURNTRANSFER=> true,
-    CURLOPT_TIMEOUT=> 1
-    ]);
+function addSat(){
+    $bdd=DBP_connet();
+        $recuperation = $bdd->query('SELECT `nomnom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
 
-$data=curl_exec($curl);
-if($data===false){
-    var_dump(curl_error($curl));
-}else{
-    if(curl_getinfo($curl, CURLINFO_HTTP_CODE)=== 200){
-        $data=json_decode($data, true);
-        echo '<pre>';
-        var_dump($data);
-        echo '</pre>';
-    }
-}
-curl_close($curl);
+
+         while ($datab = $recuperation->fetch())//pb avec le fetch 
+        {
+            echo "<tr><td>".$datab['nom']."</td>
+            <td>".$datab['hospitalises']."</td>
+            <td>".$datab['reanimation']."</td>
+            <td>".$datab['nouvellesHospitalisations']."</td>
+            <td>".$datab['nouvellesReanimations']."</td>
+            <td>".$datab['deces']."</td>
+            <td>".$datab['gueris']."</td>";
+
+        }
 }

@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class=" navit d-flex col-12 col-md-3 mx-auto" style="background-color: #ebebeb;">
-        <a class="logo" href="#"><img src="/wp-content/themes/paper/images/Sans-titre-1.png" alt=""></a>
+        <a class="logo" href="#"><img src="wp-content/themes/paper/images/Sans-titre-1.png" alt=""></a>
         <div id="myLinks">
         <?php
          wp_nav_menu(['theme_location' => 'menuheader']);
@@ -35,6 +35,6 @@
          </div>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="/wp-content/themes/paper/images/burger.png" alt="">
+          <img src="wp-content/themes/paper/images/burger.png" alt="">
         </a>
       </div>
