@@ -91,3 +91,59 @@ function covid_tracker_upgread()
         curl_close($curl);
     }
 }
+//afichage d'un tableau globale departement + région
+function addSat(){
+    $bdd=DBP_connet();
+        $recuperation = $bdd->prepare('SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
+        $recuperation->execute();
+
+         while ($datab = $recuperation->fetch())
+        {
+            echo "<tr><td>".$datab['nom']."</td>
+            <td>".$datab['hospitalises']."</td>
+            <td>".$datab['reanimation']."</td>
+            <td>".$datab['nouvellesHospitalisations']."</td>
+            <td>".$datab['nouvellesReanimations']."</td>
+            <td>".$datab['deces']."</td>
+            <td>".$datab['gueris']."</td>";
+
+        }
+}
+
+//afficher tout  département
+function adddep(){
+    $bdd=DBP_connet();
+        $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE code LIKE '%DEP%' ");
+        $recuperation->execute();
+
+         while ($datab = $recuperation->fetch())
+        {
+            echo "<tr><td>".$datab['nom']."</td>
+            <td>".$datab['hospitalises']."</td>
+            <td>".$datab['reanimation']."</td>
+            <td>".$datab['nouvellesHospitalisations']."</td>
+            <td>".$datab['nouvellesReanimations']."</td>
+            <td>".$datab['deces']."</td>
+            <td>".$datab['gueris']."</td>";
+
+        }
+}
+
+//afficher toutes le région
+function addreg(){
+    $bdd=DBP_connet();
+        $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE code LIKE '%REG%' ");
+        $recuperation->execute();
+
+         while ($datab = $recuperation->fetch()) 
+        {
+            echo "<tr><td>".$datab['nom']."</td>
+            <td>".$datab['hospitalises']."</td>
+            <td>".$datab['reanimation']."</td>
+            <td>".$datab['nouvellesHospitalisations']."</td>
+            <td>".$datab['nouvellesReanimations']."</td>
+            <td>".$datab['deces']."</td>
+            <td>".$datab['gueris']."</td>";
+
+        }
+}

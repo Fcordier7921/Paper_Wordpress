@@ -52,21 +52,3 @@ function covid_tracker_admin_page(){
     require_once("views/admin_wp.php");
     }
 
-//afichage d'un tableau globale departement + région
-function addSat(){
-    $bdd=DBP_connet();
-        $recuperation = $bdd->query('SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
-
-
-         while ($datab = $recuperation->fetch())//pb avec le fetch 
-        {
-            echo "<tr><td>".$datab['nom']."</td>
-            <td>".$datab['hospitalises']."</td>
-            <td>".$datab['reanimation']."</td>
-            <td>".$datab['nouvellesHospitalisations']."</td>
-            <td>".$datab['nouvellesReanimations']."</td>
-            <td>".$datab['deces']."</td>
-            <td>".$datab['gueris']."</td>";
-
-        }
-}

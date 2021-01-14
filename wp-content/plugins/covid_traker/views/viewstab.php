@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-3">
     <table class="table table-bordered " style="margin-left: 1rem; width:98%;">
         <thead class="table-info table-sm">
             <tr>
