@@ -45,7 +45,7 @@ function DBP_tb_create(){//création de la base de donné
 
 
 
-function covid_tracker_admin_page()
+function covid_tracker_upgread()
 {
     $DBP=DBP_connet();
     

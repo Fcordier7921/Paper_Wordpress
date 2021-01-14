@@ -45,12 +45,17 @@ add_menu_page(
 'covid_tracker_admin', //Le Slug
 'covid_tracker_admin_page'//Le callBack
 );
-include_once 'views/admin_wp.php';
 }
 
+//Maintenant génération de l'intérieur de la page admin quand le slug est appelé
+function covid_tracker_admin_page(){
+    require_once("views/admin_wp.php");
+    }
+
+//afichage d'un tableau globale departement + région
 function addSat(){
     $bdd=DBP_connet();
-        $recuperation = $bdd->query('SELECT `nomnom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
+        $recuperation = $bdd->query('SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
 
 
          while ($datab = $recuperation->fetch())//pb avec le fetch 

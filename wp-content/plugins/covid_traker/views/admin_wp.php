@@ -1,5 +1,6 @@
 <?php
 require_once plugin_dir_path(__DIR__) . 'covid_traker.php';
+// require_once __DIR__ . '/configsortcode.php';
 require_once 'header.php';
 ?>
 
@@ -7,31 +8,12 @@ require_once 'header.php';
     <h1 style="text-align: center;">Bienvenue sur le Plugin Covid Tracker</h1>
     <div class="row">
         <form method="post">
-            <button class="btn primary-btn" type="submit" name="action" value="maj" style="margin-left:12rem;">Mettre à
-                jour la base de donnée</button>
+            <p style="margin-left:1rem; font-family: aral; font-size: 1rem;">Mettre a jour les données statistique du COVID: clique <button class="btn primary-btn" type="submit" name="action" value="maj" style="font-family: aral; margin-bottom: 0.2rem; font-style: italic; color: blue;">Ici</button></p>
         </form>
     </div>
-
-</div>
-<div class="mt-5">
-    <table class="table table-bordered " style="margin-left: 13rem; width:80%;">
-        <thead class="table-info table-sm">
-            <tr>
-                <th scope="col" style="width:15%">nom du départment ou de la région</th>
-                <th scope="col" style="width:8%">personne hospitalises</th>
-                <th scope="col" style="width:8%">personne réanimation</th>
-                <th scope="col" style="width:10%">les nouvelles Hospitalisations </th>
-                <th scope="col" style="width:8%">Les Reanimations</th>
-                <th scope="col" style="width:5%">Les deces</th>
-                <th scope="col" style="width:10%">Les personne qui sont gueris</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php addSat(); ?>
-        </tbody>
-    </table>
-
+<?php covid_tracker_upgread()?>
 </div>
 <?php
+// require __DIR__ . '/viewstab.php';
 require_once 'footer.php';
 ?>
