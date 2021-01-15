@@ -1,6 +1,6 @@
 <?php
 require_once plugin_dir_path(__DIR__) . 'covid_traker.php';
-// require_once __DIR__ . '/configsortcode.php';
+require_once plugin_dir_path(__DIR__) . 'bdd.php';
 require_once 'header.php';
 ?>
 
@@ -16,29 +16,81 @@ require_once 'header.php';
 <div>
     <h5>Le generateur de shortcodes :</h5>
     <p>Comment utiliser un shortcodes? </p>
-    <p>apres avoir choisie la fonction dans la liste déroulante ci dessous
-    veuillez copier le résulta dans votre page et cela généra automatiquement 
-    un tableau de statistique. </p>
+    <p>Apres avoir choisi la fonction dans la liste déroulante ci dessous
+    appyer sur générer et copier le résulta dans votre page et cela généra automatiquement 
+    un tableau de statistique que vous avez en exemple ci-dessous. </p>
     <p>pour certain shortcodes il est naicésoire de ragouter une précision, comme le not du département ou le non dela région.</p>
     <br>
     <br>
-    <form>
+    <form method="POST" action="/wp-admin/admin.php?page=covid_tracker_admin">
   <label for="cars">Choisire la fonction désirer du shortcodes :</label><br>
-  <select name="shortcodes" id="shortcodes">
-    <option name="department" value="department">Pour afficher un département choisi</option>
-    <option name="region" value="region">Pour afficher un région choisie</option>
-    <option name="departments" value="departments">Pour afficher tous les départements</option>
-    <option name="regions" value="regions">Pour afficher toutes les régions</option>
-    <option name="displayWidthSearchBar" value="displayWidthSearchBar">Pour afficher soit tous les départements, soit toutes les régions en fonction du choix de l'utilisateur, le tout avec un moteur de recherche</option>
+  <select  name="shortcodes" id="shortcodes">
+    <option value="department dep: non du département">Pour afficher un département choisi</option>
+    <option value="region rep: non de la région">Pour afficher un région choisie</option>
+    <option value="departments">Pour afficher tous les départements</option>
+    <option value="regions">Pour afficher toutes les régions</option>
+    <option value="displayWidthSearchBar">Pour afficher soit tous les départements, soit toutes les régions en fonction du choix de l'utilisateur, le tout avec un moteur de recherche</option>
   </select>
   <br><br>
   <input type="submit" value="générer">
 </form>
-<?php
-    
-?>
+<div class="mt-3">
+  <p>Le shortcodes a copier :</p>
+    <?php
+      if(isset($_POST['shortcodes']) && !empty($_POST['shortcodes']) ){
+      echo '['.$_POST['shortcodes'].']';
+      }  
+      
+    ?>
+    <p class="mt-5">exemple de rendu :</p>
+    <div>
+        <?php
+            if($_POST['shortcodes'] === "department dep: non du département"){
+              require __DIR__ . '/viewstab.php';
+                $bdd=DBP_connet();
+                $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE 'Ain' ");
+                $recuperation->execute();
+                $datab = $recuperation->fetch();
+          
+                    echo "<tr><td>".$datab['nom']."</td>
+                    <td>".$datab['hospitalises']."</td>
+                    <td>".$datab['reanimation']."</td>
+                    <td>".$datab['nouvellesHospitalisations']."</td>
+                    <td>".$datab['nouvellesReanimations']."</td>
+                    <td>".$datab['deces']."</td>
+                    <td>".$datab['gueris']."</td>"; 
+
+            } elseif ($_POST['shortcodes'] === "region rep: non de la région") {
+                require __DIR__ . '/viewstab.php';
+                $bdd=DBP_connet();
+                $recuperation2 = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE 'Corse' ");
+                $recuperation2->execute();
+                $datab2 = $recuperation2->fetch();
+          
+                    echo "<tr><td>".$datab2['nom']."</td>
+                    <td>".$datab2['hospitalises']."</td>
+                    <td>".$datab2['reanimation']."</td>
+                    <td>".$datab2['nouvellesHospitalisations']."</td>
+                    <td>".$datab2['nouvellesReanimations']."</td>
+                    <td>".$datab2['deces']."</td>
+                    <td>".$datab2['gueris']."</td>"; 
+
+            } elseif ($_POST['shortcodes'] === "departments"){
+              require __DIR__ . '/viewstab.php';
+              adddep(); 
+            } elseif ($_POST['shortcodes'] === "regions"){
+              require __DIR__ . '/viewstab.php';
+              addreg(); 
+            } elseif ($_POST['shortcodes'] === "displayWidthSearchBar"){
+              
+              echo 'en cour de développement';
+            }
+            
+        ?>
+    </div>
+</div>
 </div>
 <?php
-require __DIR__ . '/viewstab.php';
+
 require_once 'footer.php';
 ?>

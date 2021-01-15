@@ -12,8 +12,3 @@
             </tr>
         </thead>
         <tbody>
-        <?php addSat(); ?>
-        </tbody>
-    </table>
-
-</div>

@@ -105,9 +105,11 @@ function addSat(){
             <td>".$datab['nouvellesHospitalisations']."</td>
             <td>".$datab['nouvellesReanimations']."</td>
             <td>".$datab['deces']."</td>
-            <td>".$datab['gueris']."</td>";
-
+            <td>".$datab['gueris']."</td>            ";
         }
+        echo'</tbody>
+            </table>
+            </div>';
 }
 
 //afficher tout  département
@@ -125,8 +127,10 @@ function adddep(){
             <td>".$datab['nouvellesReanimations']."</td>
             <td>".$datab['deces']."</td>
             <td>".$datab['gueris']."</td>";
-
         }
+        echo'</tbody>
+            </table>
+            </div>';
 }
 
 //afficher toutes le région
@@ -144,6 +148,8 @@ function addreg(){
             <td>".$datab['nouvellesReanimations']."</td>
             <td>".$datab['deces']."</td>
             <td>".$datab['gueris']."</td>";
-
         }
+        echo'</tbody>
+            </table>
+            </div>';
 }
