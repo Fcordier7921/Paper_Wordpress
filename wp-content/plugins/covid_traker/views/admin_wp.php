@@ -46,7 +46,7 @@ require_once 'header.php';
     <div>
         <?php
             if($_POST['shortcodes'] === "department dep: non du département"){
-              require __DIR__ . '/viewstab.php';
+              require __DIR__ . '/viewstabdep.php';
                 $bdd=DBP_connet();
                 $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE 'Ain' ");
                 $recuperation->execute();
@@ -61,7 +61,7 @@ require_once 'header.php';
                     <td>".$datab['gueris']."</td>"; 
 
             } elseif ($_POST['shortcodes'] === "region rep: non de la région") {
-                require __DIR__ . '/viewstab.php';
+                require __DIR__ . '/viewstabreg.php';
                 $bdd=DBP_connet();
                 $recuperation2 = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE 'Corse' ");
                 $recuperation2->execute();
@@ -76,14 +76,13 @@ require_once 'header.php';
                     <td>".$datab2['gueris']."</td>"; 
 
             } elseif ($_POST['shortcodes'] === "departments"){
-              require __DIR__ . '/viewstab.php';
+              require __DIR__ . '/viewstabdep.php';
               adddep(); 
             } elseif ($_POST['shortcodes'] === "regions"){
-              require __DIR__ . '/viewstab.php';
+              require __DIR__ . '/viewstabreg.php';
               addreg(); 
             } elseif ($_POST['shortcodes'] === "displayWidthSearchBar"){
-              
-              echo 'en cour de développement';
+              require __DIR__ . '/viewstabSearch.php';
             }
             
         ?>

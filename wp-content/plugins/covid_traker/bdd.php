@@ -96,7 +96,7 @@ function addSat(){
     $bdd=DBP_connet();
         $recuperation = $bdd->prepare('SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker`');
         $recuperation->execute();
-
+        
          while ($datab = $recuperation->fetch())
         {
             echo "<tr><td>".$datab['nom']."</td>
@@ -105,7 +105,7 @@ function addSat(){
             <td>".$datab['nouvellesHospitalisations']."</td>
             <td>".$datab['nouvellesReanimations']."</td>
             <td>".$datab['deces']."</td>
-            <td>".$datab['gueris']."</td>            ";
+            <td>".$datab['gueris']."</td>";
         }
         echo'</tbody>
             </table>

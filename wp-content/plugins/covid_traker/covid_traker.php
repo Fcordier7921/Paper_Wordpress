@@ -5,6 +5,7 @@
  *Version: 1.0.0
  */
 include_once("bdd.php");
+require_once __DIR__ . '/configsortcode.php';
 
 defined('ABSPATH') or die('rien à avoir');
 
