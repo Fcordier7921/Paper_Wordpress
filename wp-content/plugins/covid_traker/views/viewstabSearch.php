@@ -1,15 +1,28 @@
 <div class="contenair-fluid">
-    <div class="d-flex flex-column " style="width: 20rem; margin-left: 85rem;">
-        <div>
-            <label for="site-search">Recherche :</label>
-        </div>
-    <div>
-        
-    </div>
-    <input type="search" id="site-search" name="q" aria-label="Search through site content">
 
-    <button>Valider</button>
-</div>
+    <form action="" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="cherche" />
+    </form>
+    <form method="GET" action="" class="mt-5">
+        <label for="cars">Choisir la région ou le département :</label><br>
+        <select name="shortcodes" id="shortcodes">
+            <?php
+            require_once plugin_dir_path(__DIR__) . 'bdd.php';
+            $bdd = DBP_connet();
+            var_dump($bdd);
+            $recuperation = $bdd->prepare("SELECT `nom` FROM `apttwp_covidtraker`");
+            $recuperation->execute();
+            $datab = $recuperation->fetchAll();
+            var_dump($datab);
+            
+                for($i=0; $i<=count($datab); $i++){
+            echo '<option value="'.$datab[$i]['nom'].'">'.$datab[$i]['nom'].'</option>';
+                }
+            ?>  
+        </select>
+        <input type="submit" value="générer"/>
+    </form>
 </div>
 
 <div class="mt-3">

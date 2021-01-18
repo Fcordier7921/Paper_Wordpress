@@ -26,7 +26,7 @@ require_once 'header.php';
   <label for="cars">Choisire la fonction désirer du shortcodes :</label><br>
   <select  name="shortcodes" id="shortcodes">
     <option value="department dep: non du département">Pour afficher un département choisi</option>
-    <option value="region rep: non de la région">Pour afficher un région choisie</option>
+    <option value="region reg: non de la région">Pour afficher un région choisie</option>
     <option value="departments">Pour afficher tous les départements</option>
     <option value="regions">Pour afficher toutes les régions</option>
     <option value="displayWidthSearchBar">Pour afficher soit tous les départements, soit toutes les régions en fonction du choix de l'utilisateur, le tout avec un moteur de recherche</option>
@@ -60,7 +60,7 @@ require_once 'header.php';
                     <td>".$datab['deces']."</td>
                     <td>".$datab['gueris']."</td>"; 
 
-            } elseif ($_POST['shortcodes'] === "region rep: non de la région") {
+            } elseif ($_POST['shortcodes'] === "region reg: non de la région") {
                 require __DIR__ . '/viewstabreg.php';
                 $bdd=DBP_connet();
                 $recuperation2 = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE 'Corse' ");
