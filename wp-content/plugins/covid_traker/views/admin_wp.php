@@ -19,7 +19,7 @@ require_once 'header.php';
     <p>Apres avoir choisi la fonction dans la liste déroulante ci dessous
     appyer sur générer et copier le résulta dans votre page et cela généra automatiquement 
     un tableau de statistique que vous avez en exemple ci-dessous. </p>
-    <p>pour certain shortcodes il est naicésoire de ragouter une précision, comme le not du département ou le non dela région.</p>
+    <p>pour certain shortcodes il est naicésoire de ragouter une précision, comme le not du département ou le non dela région. (Merci de mettre la premiére lettre en majuscule)</p>
     <br>
     <br>
     <form method="POST" action="/wp-admin/admin.php?page=covid_tracker_admin">

@@ -24,7 +24,7 @@ function shortdepOne($atts)
     require __DIR__ . '/views/viewstabdep.php';
     $bdd = DBP_connet();
 
-    $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE '$dep' ");
+    $recuperation = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE '%$dep%' ");
     $recuperation->execute();
     $datab = $recuperation->fetch();
     
@@ -42,7 +42,7 @@ function shortregOne($atts)
 
     require __DIR__ . '/views/viewstabreg.php';
     $bdd = DBP_connet();
-    $recuperation2 = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE '$reg' ");
+    $recuperation2 = $bdd->prepare("SELECT `nom`, `hospitalises`, `reanimation`, `nouvellesHospitalisations`, `nouvellesReanimations`, `deces`, `gueris` FROM `apttwp_covidtraker` WHERE nom LIKE '%$reg%' ");
     $recuperation2->execute();
     $datab2 = $recuperation2->fetch();
 
@@ -114,27 +114,3 @@ function gest()
     add_shortcode('displayWidthSearchBar', 'shortdisplay');
 }
 add_action('init', 'gest');
-
-
-
-
-
-// //schortecode pour afficher tout les régions
-    
-// add_shortcode('regions', 'shortreg');
-// function shortreg(){
-//     require plugin_dir_path(__DIR__) . 'viewstab.php';
-//     addreg();
-// }
-
-// //schortecode pour afficher un département choisi
-
-// add_shortcode('department', 'shortdepone');
-// function shortdepone($atts){
-//     require plugin_dir_path(__DIR__) . 'viewstab.php';
-
-// }
-
-
-
-// add_shortcode('region', 'shortregone');
